@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulsoHarmônico - Arte que Glorifica a Deus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        :root {
+            --ph-blue-dark: #023859;
+            --ph-blue-medium: #4563BF;
+            --ph-blue-vibrant: #4B64F2;
+            --ph-gray-light: #F8F9FA;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+            color: #212529;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Estilos do carrossel */
+        .swiper {
+            width: 100%;
+            padding: 50px 0;
+        }
+
+        .swiper-slide {
+            width: 300px;
+            height: 300px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Cabeçalho/Navegação -->
+    <nav class="fixed w-full bg-white bg-opacity-90 shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-serif font-bold text-[#4B64F2] mr-3">PulsoHarmônico</span>
+                    <img src="logo1.png" alt="Logo" class="h-8 w-auto">
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-[#023859] hover:text-[#4B64F2]">Início</a>
+                    <a href="#manifestacoes" class="text-[#023859] hover:text-[#4B64F2]">Manifestações</a>
+                    <a href="#sobre" class="text-[#023859] hover:text-[#4B64F2]">Sobre</a>
+                    <a href="#galeria" class="text-[#023859] hover:text-[#4B64F2]">Galeria</a>
+                    <a href="#embaixadores" class="text-[#023859] hover:text-[#4B64F2]">Embaixadores</a>
+                    <a href="#contato" class="text-[#023859] hover:text-[#4B64F2]">Contato</a>
+                    <a href="#" class="ml-6 px-4 py-2 bg-[#4B64F2] text-white rounded-md hover:bg-[#4563BF]">Doar</a>
+                </div>
+                <button class="md:hidden text-[#023859]">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section id="inicio" class="pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#023859] mb-6">
+                        A Arte que Eleva a Alma e <span class="text-[#4B64F2]">Glorifica a Deus</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-lg">
+                        No PulsoHarmônico, transformamos talentos em adoração. Cada expressão artística é uma oportunidade de comunicar a beleza do Evangelho.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#manifestacoes" class="px-8 py-3 bg-[#4B64F2] text-white font-medium rounded-full shadow-lg hover:bg-[#4563BF] transition">
+                            Conheça Nossas Manifestações
+                        </a>
+                        <a href="#contato" class="px-8 py-3 border-2 border-[#4B64F2] text-[#4B64F2] font-medium rounded-full shadow-lg hover:bg-[#4B64F2] hover:text-white transition">
+                            Participe Conosco
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative w-full h-80 md:h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                             alt="Arte que glorifica a Deus"
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Manifestações Artísticas -->
+    <section id="manifestacoes" class="py-20 bg-[#F8F9FA]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#023859] mb-4">Manifestações Artísticas</h2>
+                <div class="w-24 h-1 bg-[#4B64F2] mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Diversas formas de arte unidas por um mesmo propósito: glorificar ao Criador
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cards de manifestações artísticas aqui -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#023859] mb-6">
+                        Sobre o <span class="text-[#4B64F2]">PulsoHarmônico</span>
+                    </h2>
+                    <div class="prose prose-lg text-gray-600 mb-8">
+                        <p>Fundado em 2023, o PulsoHarmônico nasceu da convicção de que a arte é uma linguagem poderosa dada por Deus para comunicar verdades eternas.</p>
+                    </div>
+                    <a href="#" class="inline-flex items-center px-6 py-3 bg-[#4B64F2] text-white font-medium rounded-full shadow-sm hover:bg-[#4563BF] transition">
+                        Nossa História Completa
+                    </a>
+                </div>
+                <div class="relative">
+                    <div class="relative w-full h-80 md:h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                             alt="Equipe PulsoHarmônico"
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Galeria -->
+    <section id="galeria" class="py-20 bg-[#F8F9FA]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#023859] mb-4">Nossos Trabalhos</h2>
+                <div class="w-24 h-1 bg-[#4B64F2] mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Algumas expressões artísticas que criamos para a glória de Deus
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Projeto 1: Harmonia dos Sentidos -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 bg-gradient-to-r from-[#023859] to-[#4B64F2] flex items-center justify-center">
+                        <span class="text-white text-xl font-bold">Harmonia dos Sentidos</span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            Uma imersão devocional que desperta os cinco sentidos como instrumentos de adoração. Cada episódio convida o participante a perceber Deus através da visão, audição, tato, paladar e olfato.
+                        </p>
+                        <p class="text-[#4B64F2] italic">
+                            "Arte que toca o céu com tudo o que somos."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Projeto 2: Oficina do Céu -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 bg-gradient-to-r from-[#4B64F2] to-[#4563BF] flex items-center justify-center">
+                        <span class="text-white text-xl font-bold">Oficina do Céu</span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            Um espaço criativo e espiritual onde artistas aprendem a criar junto com o Espírito Santo. Mais do que técnica, ensina princípios devocionais para transformar qualquer expressão artística em altar.
+                        </p>
+                        <p class="text-[#4B64F2] italic">
+                            "Porque toda arte consagrada carrega uma mensagem eterna."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Projeto 3: Devocional Artístico -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 bg-gradient-to-r from-[#4563BF] to-[#023859] flex items-center justify-center">
+                        <span class="text-white text-xl font-bold">Devocional Artístico</span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            Uma série de meditações visuais e sensíveis que une Palavra, beleza e inspiração. Revela o poder espiritual de imagens, poesias e composições feitas com reverência.
+                        </p>
+                        <p class="text-[#4B64F2] italic">
+                            "É a Bíblia pintada, dançada, cantada — vivida em cor e forma."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Embaixadores -->
+    <section id="embaixadores" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#023859] mb-4">Nossos Embaixadores</h2>
+                <div class="w-24 h-1 bg-[#4B64F2] mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Artistas dedicados que representam o PulsoHarmônico pelo mundo
+                </p>
+            </div>
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="embaixador1.jpeg" alt="Embaixador 1" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="embaixador2.jpeg" alt="Embaixador 2" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="embaixador3.jpeg" alt="Embaixador 3" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="embaixador4.jpeg" alt="Embaixador 4" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="embaixador5.jpeg" alt="Embaixador 5" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="embaixador6.jpeg" alt="Embaixador 6" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="embaixador7.jpeg" alt="Embaixador 7" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="embaixador8.jpeg" alt="Embaixador 8" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="embaixador9.jpeg" alt="Embaixador 9" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="embaixador10.jpeg" alt="Embaixador 10" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="embaixador11.jpeg" alt="Embaixador 11" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="embaixador12.jpeg" alt="Embaixador 12" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="embaixador13.jpeg" alt="Embaixador 13" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="embaixador14.jpeg" alt="Embaixador 14" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="embaixador15.jpeg" alt="Embaixador 15" loading="lazy">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16">
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#023859] mb-6">
+                        Entre em <span class="text-[#4B64F2]">Contato</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Quer participar do PulsoHarmônico, convidar nossa equipe para um evento ou simplesmente saber mais?
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 bg-[#4B64F2]/10 p-3 rounded-full">
+                                <svg class="h-6 w-6 text-[#4B64F2]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-[#023859]">Email</h3>
+                                <p class="text-gray-600">contato@pulsoharmonico.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <h3 class="text-xl font-medium text-[#023859] mb-4">Siga-nos</h3>
+                        <div class="flex space-x-4">
+                            <!-- GitHub -->
+                            <a href="https://github.com/pulsoharmonico" target="_blank" class="w-10 h-10 rounded-full bg-[#4B64F2]/10 flex items-center justify-center text-[#4B64F2] hover:bg-[#4B64F2] hover:text-white transition">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                                </svg>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/pulsoharmonico?igsh=MXN1cDZyNDE4dnV5ZA==" target="_blank" class="w-10 h-10 rounded-full bg-[#4B64F2]/10 flex items-center justify-center text-[#4B64F2] hover:bg-[#4B64F2] hover:text-white transition">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"/>
+                                </svg>
+                            </a>
+
+                            <!-- TikTok -->
+                            <a href="https://www.tiktok.com/@pulsoharmonico" target="_blank" class="w-10 h-10 rounded-full bg-[#4B64F2]/10 flex items-center justify-center text-[#4B64F2] hover:bg-[#4B64F2] hover:text-white transition">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                                </svg>
+                            </a>
+
+                            <!-- YouTube -->
+                            <a href="https://www.youtube.com/@pulsoharmonico" target="_blank" class="w-10 h-10 rounded-full bg-[#4B64F2]/10 flex items-center justify-center text-[#4B64F2] hover:bg-[#4B64F2] hover:text-white transition">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                    <form>
+                        <!-- Formulário de contato aqui -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-[#023859] text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <img src="logo1.png" alt="Logo PulsoHarmônico" class="h-8 w-auto mr-3">
+                        <h3 class="text-2xl font-serif font-bold text-[#4B64F2]">PulsoHarmônico</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Arte que adora. Coração que cria.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-medium mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-300 hover:text-white">Início</a></li>
+                        <li><a href="#manifestacoes" class="text-gray-300 hover:text-white">Manifestações</a></li>
+                        <li><a href="#sobre" class="text-gray-300 hover:text-white">Sobre</a></li>
+                        <li><a href="#galeria" class="text-gray-300 hover:text-white">Galeria</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-medium mb-4">Mais</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#embaixadores" class="text-gray-300 hover:text-white">Embaixadores</a></li>
+                        <li><a href="#contato" class="text-gray-300 hover:text-white">Contato</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Doações</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-medium mb-4">Contato</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300">contato@pulsoharmonico.com</li>
+                        <li class="text-gray-300">+55 (11) 98765-4321</li>
+                        <li class="text-gray-300">Salvador, Brasil</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2023 PulsoHarmônico. Todos os direitos reservados.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Política de Privacidade</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Inicializar o carrossel de embaixadores
+        const swiper = new Swiper('.swiper', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
